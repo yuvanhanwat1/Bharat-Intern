@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Yuvan Portfolio</title>
+    </head>
+    <body>
+        <!-- Navbar Section  -->
+        <header>
+            <div id="logo">Yuvan Hanwat</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- About Section  -->
+        <section id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>Hi all I'm Yuvan</h1>
+                    <p>
+                        Hello! I'm Yuvan, a passionate web developer with a
+                        focus on front-end development. I love creating
+                        beautiful and interactive websites. When I'm not coding,
+                        you can find me exploring new technologies or enjoying a
+                        good cup of coffee.
+                    </p>
+                    <div class="social-links">
+                        <a
+                            href="https://www.linkedin.com/in/yuvan-hanwat-380758192/"
+                            target="_blank">
+                            <img src="linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.github.com/yuvanhanwat1"
+                            target="_blank">
+                            <img src="github.png" alt="GitHub">
+                        </a>
+                        <a href="mailto:youremail@example.com">
+                            <img src="email.png" alt="Email">
+                        </a>
+                        <a href="https://www.facebook.com/yourname"
+                            target="_blank" class="social-icon">
+                            <img src="facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.google.com" target="_blank"
+                            class="social-icon">
+                            <img src="google.svg" alt="Google">
+                        </a>
+                    </div>
+                    <a href="mailto:youremail@example.com" class="contact-link">Contact
+                        Me</a>
+                    <a href="ResumeAll.pdf" class="resume-link" target="_blank">See
+                        My Resume</a>
+
+                </div>
+                <div class="about-image">
+                    <img src="my-img-2.jpeg" alt="Your Name">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section  -->
+        <section id="skills">
+            <h1>Skills</h1>
+            <div class="skill">
+                <h3>Web Development</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>C++ Language</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Java Language</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>SQL</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;">70%</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Project Section  -->
+        <section>
+            <div id="projects-heading">
+                <h1>Projects</h1>
+            </div>
+            <div id="projects">
+                <div class="project" id="project1"
+                    onclick="openProject('project1/index.html')">
+                    <h2>Quizz App</h2>
+                    <p>Quiz is the method of answering to the questions that has
+                        been asked based on the any subject. created this app
+                        using React JS Technology. To open the project click on
+                        the image.
+                    </p>
+                    <img src="quiz1.png" alt="Project 1">
+
+                </div>
+                <div class="project" id="project2"
+                    onclick="openProject('project2/index.html')">
+                    <h2>Notes App</h2>
+                    <p>I created as a minor project. It stores all notes and
+                        important information digitally, usually in a cloud
+                        based storage system. I created this project using only
+                        JavaScript Language. To open the project click on the
+                        image.
+                    </p>
+                    <img src="notes.webp" alt="Project 2">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Resume Section  -->
+        <section id="resume">
+            <h1><img src="resume-img-1.png" alt=""></h1>
+            <p><a href="ResumeAll.pdf" target="_blank">Download Resume</a></p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h1>Contact Me</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+
+        <!-- Footer Section  -->
+        <footer>
+            <p>&copy; 2023 Yuvan Portfolio. All rights reserved.</p>
+        </footer>
+    </body>
+
+    <script src="script.js"></script>
+    
+</html>
